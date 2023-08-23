@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios" />
+        <link href="style.css" rel="stylesheet" />
+        <title>&#127801; Swiftie</title>
+    </head>
+    <body style="background:#8F0A71">
+        <header>
+            <h1>
+                <a href="index.html">Ignacio Alarcón</a>
+                <a href="cursos.html">CURSOS</a>
+                <a href="emoji.html">EMOJI</a>
+                <a href="swiftie.html" style="text-decoration: line-through">SWIFTIE</a>
+            </h1>
+        </header>
+        <main>
+            <div>
+                <p>Siendo las <span id="hora"></span>:<span id="minutos"></span>, recuerdo el tema <span id="data.song"></span> de Taylor Swift. En este tema, del disco <span id="data.album"></span>, ella canta:</p>
+                <blockquote id="data.quote"></blockquote>
+            </div>
+        </main>
+        <footer>
+            <p><a href="https://github.com/profesorfaco/dno037-2023-2">Diseño y nuevos medios</a> <a href="https://github.com/profesorfaco/dno037-2023-2/tree/main/clase-03">23 de agosto, 2023</a></p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // Un par de variables en las que guardo el momento en que se carga la página (Date)
+            var laHora = new Date().getHours();
+            var losMinutos = new Date().getMinutes();
+            // Pongo el contenido de las variables en el span con identidad hora
+            document.querySelector("#hora").innerHTML = laHora + ":" + losMinutos;
+
+            // Creo otra variable más
+            var data;
+            // Guardo en la variable recién creada lo que me entregue una API
+            function preload() {
+                data = loadJSON("https://taylorswiftapi.onrender.com/get");
+            }
+            // En esta ocasión no necesito un canvas, pero sí necesito un párrafo
+            function setup() {
+                noCanvas();
+                createP(data.quote + " (Esta canción se llama: "+data.song+", y aparece en el álbum: "+data.album+") <span> —Taylor Swift</span>").parent("texto");
+            }
+        </script>
+    </body>
+</html>
