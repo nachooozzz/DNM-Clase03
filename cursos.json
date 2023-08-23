@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Dibujo Figura Humana Básico",
+        "code": "ARO101D",
+        "about": "En este curso los estudiantes adquirirán conocimientos básicos para la representación de la figura humana, abordando aspectos como estructura, proporción y relaciones espaciales."
+    },
+    {
+        "name": "Dibujo de Retratos",
+        "code": "ARO102D",
+        "about": "En este curso teórico y práctico el alumno podrá conocer y abordar la práctica de nuevas técnicas de representación a través de la ilustración como herramienta de comunicación visual. En general, el curso desarrollará las capacidades expresivas y creativas del alumno, orientándolas a satisfacer y complementar las demandas de la actividad proyectual en busca de un lenguaje propio y de una cultura visual gráfica. Dado este objetivo, la ilustración será un recurso expresivo autónomo."
+    },
+    {
+        "name": "Dibujo de Croquis y Boceto",
+        "code": "ARO103D",
+        "about": "En este curso los estudiantes desarrollarán habilidades de observación y técnicas de representación gráfica, por medio del dibujo de croquis y boceto a partir de diferentes modelos. Los trabajos serán evaluados de manera continua, reforzando el proceso individual de cada estudiante, a partir de trabajo en taller y en espacios exteriores."
+    },
+    {
+        "name": "Serigrafía",
+        "code": "ARO105G",
+        "about": "En este curso los estudiantes aprenderán la técnica de la serigrafía y su aplicación en el campo de las artes visuales. Desarrollarán una propuesta creativa a partir de la construcción de matrices directas e indirectas que permitirán la reproducción múltiple de una imagen sobre distintos soportes."
+    },
+    {
+        "name": "Práctica y Teoría del Color",
+        "code": "ART0401",
+        "about": "Taller que propone el estudio del color en cuanto fenómeno perceptivo y medio de creación artística. Su desarrollo se da a través de una secuencia de ejercicios prácticos en los que se propone, fundamentalmente, la interacción entre los colores como eje de estudio."
+    }
+]
